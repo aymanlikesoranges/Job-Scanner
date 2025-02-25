@@ -14,9 +14,12 @@ RECIPIENT_EMAIL = "auddin6@binghamton.edu"  # Recipient email address
 SEEN_LINKS_FILE = "seen_links.json"
 NEW_LINKS_FILE = "new_links.json"
 GOOD_LINKS_SEEN_FILE = "good-links-seen.json"
-SEARCH_QUERY = ('site:boards.greenhouse.io united states intext:"apply" '
-                '(intext:"Software Developer intern" OR intext:"Software Developer internship" '
-                'OR intext:"Software Engineer intern" OR intext:"Software Engineer internship")')
+
+QUERIES = [
+    'site:boards.greenhouse.io united states intext:"apply" (intext:"Software Developer intern" OR intext:"Software Developer internship")',
+    'site:boards.greenhouse.io united states intext:"apply" (intext:"Software Engineer intern" OR intext:"Software Engineer internship")',
+    'site:myworkdayjobs.com Summer 2025 Software NY"'
+]
 
 NUM_RESULTS = 200
 
@@ -95,12 +98,14 @@ def send_email(new_links):
         print("Error sending email:", e)
 
 def search_job_links():
-    results = []
-    try:
-        for url in search(SEARCH_QUERY, num=300, start=0, pause=1):  # Limit to 10 results per search
-            results.append(url)
-    except Exception as e:
-        print("Error during Google search:", e)
+    results = set()
+    for query in QUERIES:
+        try:
+            print(f"Searching for: {query}")
+            for url in search(query, num=150, start=0, pause=1):
+                results.add(url)
+        except Exception as e:
+            print(f"Error during Google search for query: {query} - {e}")
     return results
 
 def job_search_task():
@@ -113,7 +118,7 @@ def job_search_task():
     new_links = load_new_links()
 
     # Search for new job links (this time, batching them in a loop)
-    current_links = set(search_job_links())
+    current_links = search_job_links()
 
     # Identify new links by subtracting the seen ones from the current links
     new_links_found = current_links - seen_links
@@ -145,7 +150,7 @@ def job_search_task():
         print("No valid new job links to send.")
     
     return valid_new_links  # Return valid new links
+
 if __name__ == "__main__":
     job_search_task()
     print("Job search completed for this run.")
-

@@ -8,8 +8,9 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 # Google API Credentials
-API_KEY = "AIzaSyArfjw_1cjheC0argTxZKUESDb5_XXTUj8"
-
+API_KEY = "AIzaSyDPRy-4jdYzkXomiKFkimwQYgMUG4Z-izQ"
+#AIzaSyDPRy-4jdYzkXomiKFkimwQYgMUG4Z-izQ
+#AIzaSyArfjw_1cjheC0argTxZKUESDb5_XXTUj8
 #"AIzaSyDeVm-Ml7E3Whyf-e29rWX0ugNxJdqY6kI"  # Replace with a new API key
 CX_ID = "5634a00ef882e4378"  # Your custom search engine ID
 
@@ -111,8 +112,37 @@ QUERIES = [
     'site:jobs.lever.co New York City Software Development intern',
     'site:jobs.lever.co New York City Software Development internship',
     'site:jobs.lever.co New York City Software Engineering intern',
-    'site:jobs.lever.co New York City Software Engineering internship'
+    'site:jobs.lever.co New York City Software Engineering internship',
+
+    # WorkAtAStartup variations
+    'site:workatastartup.com United States apply Software Developer intern',
+    'site:workatastartup.com United States apply Software Developer internship',
+    'site:workatastartup.com United States apply Software Engineer intern',
+    'site:workatastartup.com United States apply Software Engineer internship',
+    'site:workatastartup.com United States apply Software Development intern',
+    'site:workatastartup.com United States apply Software Development internship',
+    'site:workatastartup.com United States apply Software Engineering intern',
+    'site:workatastartup.com United States apply Software Engineering internship',
+    'site:workatastartup.com United States Software Developer intern',
+    'site:workatastartup.com United States Software Developer internship',
+    'site:workatastartup.com United States Software Engineer intern',
+    'site:workatastartup.com United States Software Engineer internship',
+    'site:workatastartup.com United States Software Development intern',
+    'site:workatastartup.com United States Software Development internship',
+    'site:workatastartup.com United States Software Engineering intern',
+    'site:workatastartup.com United States Software Engineering internship',
+
+    # WorkAtAStartup NYC-specific searches
+    'site:workatastartup.com New York City apply Software Developer intern',
+    'site:workatastartup.com New York City apply Software Developer internship',
+    'site:workatastartup.com New York City apply Software Engineer intern',
+    'site:workatastartup.com New York City apply Software Engineer internship',
+    'site:workatastartup.com New York City apply Software Development intern',
+    'site:workatastartup.com New York City apply Software Development internship',
+    'site:workatastartup.com New York City apply Software Engineering intern',
+    'site:workatastartup.com New York City apply Software Engineering internship'
 ]
+
 
 
 

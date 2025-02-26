@@ -17,8 +17,7 @@ GOOD_LINKS_SEEN_FILE = "good-links-seen.json"
 
 QUERIES = [
     'site:boards.greenhouse.io united states intext:"apply" (intext:"Software Developer intern" OR intext:"Software Developer internship")',
-    'site:boards.greenhouse.io united states intext:"apply" (intext:"Software Engineer intern" OR intext:"Software Engineer internship")',
-    'site:myworkdayjobs.com Summer 2025 Software NY"'
+    'site:boards.greenhouse.io united states intext:"apply" (intext:"Software Engineer intern" OR intext:"Software Engineer internship")'
 ]
 
 NUM_RESULTS = 200

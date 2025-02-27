@@ -8,7 +8,8 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 # Google API Credentials
-API_KEY = "AIzaSyDeVm-Ml7E3Whyf-e29rWX0ugNxJdqY6kI"
+API_KEY = "AIzaSyD399rj1kQ2lM2XgfhKNb3sE3i6yDp0vhk"
+#AIzaSyD399rj1kQ2lM2XgfhKNb3sE3i6yDp0vhk
 #AIzaSyDPRy-4jdYzkXomiKFkimwQYgMUG4Z-izQ
 #AIzaSyArfjw_1cjheC0argTxZKUESDb5_XXTUj8
 #"AIzaSyDeVm-Ml7E3Whyf-e29rWX0ugNxJdqY6kI"  # Replace with a new API key

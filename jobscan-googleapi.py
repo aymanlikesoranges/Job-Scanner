@@ -115,38 +115,26 @@ QUERIES = [
     'site:jobs.lever.co New York City Software Engineering intern',
     'site:jobs.lever.co New York City Software Engineering internship',
 
-    # WorkAtAStartup variations
-    'site:workatastartup.com United States apply Software Developer intern',
-    'site:workatastartup.com United States apply Software Developer internship',
-    'site:workatastartup.com United States apply Software Engineer intern',
-    'site:workatastartup.com United States apply Software Engineer internship',
-    'site:workatastartup.com United States apply Software Development intern',
-    'site:workatastartup.com United States apply Software Development internship',
-    'site:workatastartup.com United States apply Software Engineering intern',
-    'site:workatastartup.com United States apply Software Engineering internship',
-    'site:workatastartup.com United States Software Developer intern',
-    'site:workatastartup.com United States Software Developer internship',
-    'site:workatastartup.com United States Software Engineer intern',
-    'site:workatastartup.com United States Software Engineer internship',
-    'site:workatastartup.com United States Software Development intern',
-    'site:workatastartup.com United States Software Development internship',
-    'site:workatastartup.com United States Software Engineering intern',
-    'site:workatastartup.com United States Software Engineering internship',
+    # AshbyHQ variations (United States)
+    'site:ashbyhq.com United States apply Software Developer intern',
+    'site:ashbyhq.com United States apply Software Developer internship',
+    'site:ashbyhq.com United States apply Software Engineer intern',
+    'site:ashbyhq.com United States apply Software Engineer internship',
+    'site:ashbyhq.com United States apply Software Development intern',
+    'site:ashbyhq.com United States apply Software Development internship',
+    'site:ashbyhq.com United States apply Software Engineering intern',
+    'site:ashbyhq.com United States apply Software Engineering internship',
 
-    # WorkAtAStartup NYC-specific searches
-    'site:workatastartup.com New York City apply Software Developer intern',
-    'site:workatastartup.com New York City apply Software Developer internship',
-    'site:workatastartup.com New York City apply Software Engineer intern',
-    'site:workatastartup.com New York City apply Software Engineer internship',
-    'site:workatastartup.com New York City apply Software Development intern',
-    'site:workatastartup.com New York City apply Software Development internship',
-    'site:workatastartup.com New York City apply Software Engineering intern',
-    'site:workatastartup.com New York City apply Software Engineering internship'
+    # AshbyHQ variations (NYC-specific)
+    'site:ashbyhq.com New York City apply Software Developer intern',
+    'site:ashbyhq.com New York City apply Software Developer internship',
+    'site:ashbyhq.com New York City apply Software Engineer intern',
+    'site:ashbyhq.com New York City apply Software Engineer internship',
+    'site:ashbyhq.com New York City apply Software Development intern',
+    'site:ashbyhq.com New York City apply Software Development internship',
+    'site:ashbyhq.com New York City apply Software Engineering intern',
+    'site:ashbyhq.com New York City apply Software Engineering internship',
 ]
-
-
-
-
 
 
 def load_links(file_path):
